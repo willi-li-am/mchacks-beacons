@@ -37,14 +37,13 @@ def parse_minerva_schedule(lines):
                 courses.append(current_course)
             # Start a new course dict
             current_course = {
-                "title": match_course.group("title").strip(),
+                "title": match_course.group("title").strip().rstrip('.'),
                 "courseCode": match_course.group("courseCode").strip(),
                 "section": match_course.group("section").strip(),
                 "schedule": {
                     "time": "",
                     "days": "",
                     "location": "",
-                    "dateRange": ""
                 }
             }
             waiting_for_schedule = False
@@ -86,11 +85,10 @@ def parse_minerva_schedule(lines):
             # parts[5] = "Instructors..." (ignored)
 
             # We'll do a safety check to ensure we have at least 4 parts
-            if len(parts) >= 4:
+            if len(parts) >= 3:
                 current_course["schedule"]["time"] = parts[0].strip()
                 current_course["schedule"]["days"] = parts[1].strip()
                 current_course["schedule"]["location"] = parts[2].strip()
-                current_course["schedule"]["dateRange"] = parts[3].strip()
 
             waiting_for_schedule = False  # done reading schedule line
             continue
@@ -104,7 +102,8 @@ def parse_minerva_schedule(lines):
 
 def main():
     # Read all lines from stdin
-    text = """"""
+    text = """
+    """
 
     lines = text.split("\n")
 

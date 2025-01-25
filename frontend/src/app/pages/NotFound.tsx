@@ -1,4 +1,3 @@
-// filepath: /Users/williamli/Desktop/Personal/Coding Projects/mchacks/frontend/src/app/pages/NotFound.tsx
 import React from 'react';
 import { Container, Typography, Box } from '@mui/material';
 
