@@ -1,0 +1,68 @@
+# ----------------------------
+#  General
+# ----------------------------
+.DS_Store
+Thumbs.db
+*.log
+*.swp
+*.swo
+.env
+.env.*
+
+
+# ----------------------------
+#  Node / React
+# ----------------------------
+
+# Dependencies
+node_modules/
+
+# Production build
+build/
+dist/
+
+# Optional cache and logs
+.npm/
+.yarn/
+.yarn/cache
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+.pnp
+
+# Testing
+coverage/
+
+
+# ----------------------------
+#  Python / Flask
+# ----------------------------
+
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.so
+*.egg
+*.egg-info/
+*.pyd
+*.pyo
+
+# Virtual environments
+venv/
+.venv/
+
+# Mypy and pytest cache
+.mypy_cache/
+.pytest_cache/
+coverage/
+
+# Jupyter notebooks checkpoints
+.ipynb_checkpoints
+
+
+# ----------------------------
+#  Editor / IDE
+# ----------------------------
+.vscode/
+.idea/
+*.iml
