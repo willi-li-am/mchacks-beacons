@@ -1,16 +1,20 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import NotFound from './app/pages/NotFound';
+import SignInSignUp from './app/pages/SignIn';
+import { Box } from '@mui/material';
 
 function App() {
   return (
-    <Routes>
+    <Box sx={{ display: 'flex', flexDirection: 'column', minWidth: '100%', minHeight: '100vh' }}>
+      <Routes>
       <Route path="/" element={<></>} />
       <Route path="/home" element={<></>} />
       <Route path="/user/:user_id" element={<></>} />
-      <Route path="/join" element={<></>} />
+      <Route path="/join" element={<SignInSignUp/>} />
       <Route path="*" element={<NotFound/>} />
     </Routes>
+    </Box>
   );
 }
 
