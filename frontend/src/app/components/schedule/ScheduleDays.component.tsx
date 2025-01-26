@@ -19,7 +19,8 @@ export const ScheduleDayRow = () => {
         border: "1px solid #d3d3d3",
         borderBottom: "none",
         justifyContent: "end",
-        width: "748px"
+        width: "750px",
+        boxSizing: "border-box",
       }}
     >
       <Box
@@ -37,6 +38,8 @@ export const ScheduleDayRow = () => {
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
+                borderLeft: "1px solid #d3d3d3",
+                boxSizing: "border-box",
               }}
               key={`ScheduleRowComponent ${day}`}
             >

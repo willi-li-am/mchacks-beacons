@@ -4,6 +4,10 @@ import counterReducer from '../features/counter/counterSlice';
 export const store = configureStore({
   reducer: {
     counter: counterReducer,
+    // TODO: Add auth reducer
+    // TODO: Add user reducer
+    // TODO: Add schedule reducer
+    // TODO: Add friend reducer
   },
 });
 
